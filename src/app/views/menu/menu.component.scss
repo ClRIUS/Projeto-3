@@ -1,0 +1,23 @@
+.main-text{
+    text-align: center;
+    margin-top: 60px;
+    color: var(--primary-color);
+}
+
+.menu-container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.category-container{
+    width: 80%;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+*{
+    display: flex;
+    justify-content: center;
+}

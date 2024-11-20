@@ -1,0 +1,7 @@
+<div class="menu-container">
+    <h1 class="main-text">CARDÁPIO</h1>
+    <div class="category-container">
+        <app-card *ngFor="let category of categoryList" [categoryData]="category"></app-card>
+    </div>
+    <app-button textButton="VER CARDÁPIO COMPLETO" [buttonClass]="'menu-button'"></app-button>
+</div>

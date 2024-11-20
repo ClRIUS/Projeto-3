@@ -1,0 +1,7 @@
+<button *ngIf="!routerLink" [ngClass]="buttonClass" class="default-btn">
+  {{ textButton }}
+</button>
+
+<button *ngIf="routerLink" [routerLink]="routerLink" [ngClass]="buttonClass" class="default-btn">
+  {{ textButton }}
+</button>

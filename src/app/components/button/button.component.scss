@@ -1,0 +1,26 @@
+* {
+  cursor: pointer;
+}
+.default-btn {
+  border-radius: 0;
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  min-width: 220px;
+  min-height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.custom-button {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button:hover {
+  transform: scale(1.12);
+}
+
+.menu-button {
+  width: 350px;
+  margin-bottom: 50px;
+}

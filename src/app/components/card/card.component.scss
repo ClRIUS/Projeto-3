@@ -1,0 +1,22 @@
+.card-container {
+  width: 250px;
+}
+
+.hamburguer-img {
+  max-width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.card-text {
+  font-weight: normal;
+}
+
+.card-container:hover {
+  outline: 1.5px solid var(--primary-color);
+  outline-offset: 10px;
+}
