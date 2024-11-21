@@ -1,32 +1,58 @@
-<<<<<<< HEAD
-# BurgerMania
+# Projeto Unidade 9 - BurguerMania
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+Esse projeto tem como objetivo aprimorar a habilidade de nós residentes com o desenvolvimento Front-End.
 
-## Development server
+## Dificuldades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+No geral ainda tenho certas dificuldades na manipulação de dados para apresentação em tela. Infelizmente acabei não conseguindo desenvolver a pagina de detalhes do produto. Em contrapartida, com o tempo disponível que tive consegui deixar a página responsiva e os outros tópicos que foram desenvolvidos esceto a página de detalhes ficaram bem interativos. No geral com as adversidades e minha dificuldade em alguns tópicos me sinto satisfeito com o resultado obtido.
 
-## Code scaffolding
+![Telas do projeto](src/assets/img/Project.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pré-requisitos
 
-## Build
+Verifique se você possui os seguintes softwares instalados:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Node.js](https://nodejs.org/) (Recomendada a versão v20.11.1 ou superior)
+- [Angular CLI](https://angular.io/cli) (se ainda não tiver, você pode instalá-lo globalmente com o comando `npm install -g @angular/cli`)
 
-## Running unit tests
+O projeto foi desenvolvido na versão do Angular 17.3.11
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+1. **Clone o repositório**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/ClRIUS/Projeto-3.git
+   cd BurguerMania
+   ```
 
-## Further help
+2. **Instale o Angular CLI caso não tenha**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Projeto-3
-Projeto Referente à Unidade 9 - Restic36
->>>>>>> e71949ac193304487b3c39a195678d48168799b7
+   Execute o seguinte comando:
+
+   ```bash
+   npm install -g @angular/cli
+   ```
+   
+2. **Instale as dependências**:
+
+   Execute o seguinte comando para instalar todas as dependências necessárias do projeto:
+
+   ```bash
+   npm install
+   ```
+
+
+## Executando o Projeto
+
+Para iniciar o servidor de desenvolvimento e executar o projeto, use o comando:
+
+```bash
+ng serve
+```
+
+O aplicativo estará disponível em [http://localhost:4200](http://localhost:4200).
+
+
+## Tecnologias utilizadas
+- Angular versão 17.3.11
