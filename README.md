@@ -1,6 +1,6 @@
 # Projeto Unidade 9 - BurguerMania
 
-Esse projeto tem como objetivo aprimorar a habilidade de nós residentes com o desenvolvimento Front-End.
+Esse projeto visa aprimorar a habilidade de nós residentes da Restic36 com o desenvolvimento Front-End. O ojetivo Geral do projeto é criar uma aplicação Front-End com base em protótipo do Figma onde a página seja interativa e atenda os tópicos exigidos, como por exemplo a componentização, roteamento, Estilos Globais com Variáveis CSS, dentre outros.
 
 ## Dificuldades
 
