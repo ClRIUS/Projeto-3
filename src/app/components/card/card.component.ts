@@ -10,6 +10,6 @@ import { Categories } from '../../interfaces/categories';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() hamburguerData:Hamburguers
-  @Input() categoryData:Categories
+  @Input() hamburguerData:Hamburguers | undefined
+  @Input() categoryData:Categories | undefined
 }

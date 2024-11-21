@@ -1,9 +1,9 @@
 export interface Hamburguers {
   id: number;
-  name: string;
-  description: string;
-  detailedDescription: string;
+  title: string;
+  text: string;
   image: string;
+  detailedDescription: string;
   price: number;
   categoryId: number;
 }

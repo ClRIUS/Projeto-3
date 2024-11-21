@@ -1,10 +1,20 @@
-import { Injectable } from '@angular/core';
-import { Hamburguers } from '../../app/interfaces/hamburguers';
-
-@Injectable({
-  providedIn: 'root',
+import { Component } from '@angular/core';
+import { Hamburguers } from '../../../interfaces/hamburguers';
+import { CardComponent } from '../../../components/card/card.component';
+import { CommonModule } from '@angular/common';
+import { ButtonComponent } from '../../../components/button/button.component';
+import { RouterModule } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Categories } from '../../../interfaces/categories';
+ 
+@Component({
+  selector: 'app-hamburguers',
+  standalone: true,
+  imports: [CardComponent, CommonModule, ButtonComponent, RouterModule],
+  templateUrl: './hamburguers.component.html',
+  styleUrl: './hamburguers.component.scss',
 })
-export class HamburguersService {
+export class HamburguersComponent {
   hamburguerList: Hamburguers[] = [
     {
       id: 1,
@@ -81,11 +91,29 @@ export class HamburguersService {
     
   ];
 
-  constructor() {}
+  filteredHamburguerList: Hamburguers[] = [];
+  categoryName: string = '';
 
-  getHamburguerById(id: number): Hamburguers|undefined {
-    return this.hamburguerList.find(hamburguer => hamburguer.id === id);
+  categoryList: Categories[] = [
+    { id: 1, title: 'X-Vegan', text: 'Hamburguers feitos para clientes Veganos.', image:'../../../assets/img/hamburguer.png' },
+    { id: 2, title: 'X-Fitness', text: 'Hamburguers feitos para quem segue uma rotina Fitness.', image:'../../../assets/img/hamburguer.png'},
+    { id: 3, title: 'X-Infarto', text: 'Hamburguers feitos para atender sua fome!', image:'../../../assets/img/hamburguer.png'},
+  ];
+
+   constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    const categoryId = Number(this.route.snapshot.paramMap.get('categoryId')); // Pega o categoryId da URL
+    
+    // Filtra os produtos pela categoria
+    this.filteredHamburguerList = this.hamburguerList.filter(
+      (product) => product.categoryId === categoryId
+    );
+    
+    // Encontra o nome da categoria
+    const category = this.categoryList.find(cat => cat.id === categoryId);
+    if (category) {
+      this.categoryName = category.title; // Define o nome da categoria
+    }
   }
-
-
 }

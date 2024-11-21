@@ -1,0 +1,16 @@
+<div class="menu-container">
+  <h1 class="main-text">{{ categoryName }}</h1>
+
+  <div class="products-container">
+    <app-card
+      *ngFor="let hamburguer of filteredHamburguerList"
+      [hamburguerData]="hamburguer"
+      [routerLink]="['/details', hamburguer.id]"  
+    ></app-card>
+  </div>
+
+  <app-button
+    textButton="VER CARDÁPIO COMPLETO"
+    [buttonClass]="'menu-button'"
+  ></app-button>
+</div>

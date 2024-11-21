@@ -19,3 +19,13 @@
   transform: scale(1.2);
   cursor: pointer;
 }
+
+@media (max-width:860px){
+  .topics{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+  }
+}

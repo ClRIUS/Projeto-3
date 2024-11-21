@@ -1,7 +1,17 @@
 <div class="card-container">
-    <img class="hamburguer-img" [src]="categoryData.image" alt="hamburguer"/>
+  <!-- Exibe dados de categoria -->
+  <img class="hamburguer-img" [src]="categoryData?.image" />
   <div class="card-category">
-    <p class="title">{{categoryData.title}}</p>
-    <div class="card-text">{{categoryData.text}}</div>
+    <p class="title">{{ categoryData?.title }}</p>
+    <div class="card-text">{{ categoryData?.text }}</div>
+  </div>
+
+  <!-- Exibe dados de produto -->
+  <div class="card-container">
+    <img class="hamburguer-img" [src]="hamburguerData?.image" />
+    <div class="card-category">
+      <p class="title">{{ hamburguerData?.title }}</p>
+      <div class="card-text">{{ hamburguerData?.text }}</div>
+    </div>
   </div>
 </div>
